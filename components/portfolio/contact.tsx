@@ -9,8 +9,8 @@ const channels = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@alexvolkov.dev',
-    href: 'mailto:hello@alexvolkov.dev',
+    value: 'supermax44676@gmail.com',
+    href: 'mailto:supermax44676@gmail.com',
   },
   {
     icon: LinkedinIcon,
@@ -21,14 +21,14 @@ const channels = [
   {
     icon: GithubIcon,
     label: 'GitHub',
-    value: '@alexvolkov',
-    href: '#',
+    value: '@Suvrot',
+    href: 'https://github.com/Suvrot',
   },
   {
     icon: Send,
     label: 'Telegram',
-    value: '@alexvolkov_dev',
-    href: '#',
+    value: '@slimgorur67',
+    href: 'https://t.me/slimgorur67',
   },
 ]
 
