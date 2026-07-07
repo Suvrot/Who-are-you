@@ -24,10 +24,10 @@ export function Nav() {
     >
       <div className="glass mx-auto mt-4 flex max-w-5xl items-center justify-between rounded-2xl px-5 py-3 md:px-6">
         <a href="#" className="text-sm font-semibold tracking-tight">
-          <span className="text-gradient">AV</span>
-          <span className="ml-2 hidden text-muted-foreground sm:inline">
-            Alex Volkov
-          </span>
+          <span className="text-gradient">SS</span>
+<span className="ml-2 hidden text-muted-foreground sm:inline">
+  Savely Shulgin
+</span>
         </a>
         <nav
           aria-label="Основная навигация"
