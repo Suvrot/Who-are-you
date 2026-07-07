@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Alex Volkov — Full Stack AI Engineer & Creative Developer',
+  title: 'Savely Shulgin — Full Stack AI Engineer & Creative Developer',
   description:
     'Создаю AI-продукты, современные веб-приложения и масштабируемые цифровые решения. Full Stack-разработчик: AI, React, Next.js, TypeScript, Python.',
   generator: 'v0.app',
