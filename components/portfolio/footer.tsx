@@ -2,7 +2,7 @@ import { Mail, Send } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './brand-icons'
 
 const socials = [
-  { icon: GithubIcon, label: 'GitHub', href: '#' },
+{ icon: GithubIcon, label: 'GitHub', href: 'https://github.com/Suvrot' },
   { icon: LinkedinIcon, label: 'LinkedIn', href: '#' },
   { icon: Send, label: 'Telegram', href: '#' },
   { icon: Mail, label: 'Email', href: 'mailto:hello@alexvolkov.dev' },
