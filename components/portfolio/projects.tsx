@@ -12,7 +12,7 @@ const projects = [
       'AI-помощник с системой авторизации, подписками, анализом документов и интеллектуальным чатом.',
     image: '/projects/ai-saas.png',
     tech: ['Next.js', 'OpenAI', 'Stripe', 'PostgreSQL'],
-    url: 'https://saas-portfolio-ai.vercel.app',
+    url: 'https://saas-portfolio-virid.vercel.app',
   },
   {
     title: 'Smart CRM',
