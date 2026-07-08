@@ -42,14 +42,6 @@
 
 ---
 
-## Установка
-
-`ash
-git clone https://github.com/Suvrot/Who-are-you.git
-cd Who-are-you
-npm install
-npm run dev
-`
 
 ---
 
