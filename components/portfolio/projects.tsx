@@ -1,9 +1,8 @@
-'use client'
+﻿'use client'
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
-import { GithubIcon } from './brand-icons'
 import { SectionHeading } from './reveal'
 
 const projects = [
@@ -13,6 +12,7 @@ const projects = [
       'AI-помощник с системой авторизации, подписками, анализом документов и интеллектуальным чатом.',
     image: '/projects/ai-saas.png',
     tech: ['Next.js', 'OpenAI', 'Stripe', 'PostgreSQL'],
+    url: 'https://saas-portfolio-ai.vercel.app',
   },
   {
     title: 'Smart CRM',
@@ -20,6 +20,7 @@ const projects = [
       'Современная CRM-система с аналитикой, автоматизацией процессов и управлением клиентами.',
     image: '/projects/smart-crm.png',
     tech: ['React', 'NestJS', 'Prisma', 'Redis'],
+    url: 'https://saas-portfolio-crm.vercel.app',
   },
   {
     title: 'Finance Dashboard',
@@ -27,6 +28,7 @@ const projects = [
       'Платформа финансовой аналитики в реальном времени с интерактивными графиками.',
     image: '/projects/finance-dashboard.png',
     tech: ['Next.js', 'TypeScript', 'WebSocket', 'Recharts'],
+    url: 'https://saas-portfolio-finance.vercel.app',
   },
   {
     title: 'E-Commerce Platform',
@@ -34,6 +36,7 @@ const projects = [
       'Интернет-магазин на Next.js с интеграцией Stripe и административной панелью.',
     image: '/projects/ecommerce.png',
     tech: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
+    url: 'https://saas-portfolio-ecommerce.vercel.app',
   },
   {
     title: 'AI Chat Application',
@@ -41,6 +44,7 @@ const projects = [
       'Современное AI-чат-приложение с потоковой генерацией ответов, памятью диалогов и загрузкой файлов.',
     image: '/projects/ai-chat.png',
     tech: ['AI SDK', 'Claude API', 'RAG', 'Vercel'],
+    url: 'https://saas-portfolio-chat.vercel.app',
   },
   {
     title: 'Task Management Platform',
@@ -48,6 +52,7 @@ const projects = [
       'Платформа управления задачами и проектами, вдохновлённая Linear.',
     image: '/projects/task-platform.png',
     tech: ['React', 'GraphQL', 'MongoDB', 'Framer Motion'],
+    url: 'https://saas-portfolio-tasks.vercel.app',
   },
 ]
 
@@ -60,7 +65,7 @@ export function Projects() {
       <SectionHeading
         eyebrow="Портфолио"
         title="Избранные проекты"
-        description="Продукты, которые я спроектировал и разработал — от AI-платформ до e-commerce решений."
+        description="Полный стек: от идеи до деплоя — от AI-инструментов до e-commerce решений."
       />
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => (
@@ -75,7 +80,7 @@ export function Projects() {
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
                 src={project.image || '/placeholder.svg'}
-                alt={`Превью проекта ${project.title}`}
+                alt={`Скриншот проекта ${project.title}`}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -100,17 +105,12 @@ export function Projects() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-2 flex gap-2">
+              <div className="mt-2">
                 <a
-                  href="#"
-                  className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-border py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-                >
-                  <GithubIcon size={14} />
-                  GitHub
-                </a>
-                <a
-                  href="#"
-                  className="flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-primary/10 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 rounded-lg bg-primary/10 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
                 >
                   <ExternalLink size={14} aria-hidden="true" />
                   Live Demo
